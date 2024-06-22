@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+}
+
+body{
+ font-family: 'vollkorn', serif ;
+
+
+
+ background: #121212; /* Fallback for browsers that don't support gradients */
+    background: linear-gradient(
+      135deg,
+      #121212 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      #121212 50%,
+      #121212 75%,
+      #1a1a1a 75%,
+      #1a1a1a
+    );
+    background-size: 40px 40px;
+  
+    /* Animation */
+    animation: move 4s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
+}
+
+a{ 
+    list-style: none;
+    color: white;
+    text-underline-offset: 20px;
+    text-decoration: none;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      transition: 0.5s ease;
+}
+.Logo-container{
+  flex: 1;
+    color: #bc0c0c;
+}
+
+.logo{
+    font-size: 30px;
+    color: rgb(255, 14, 14);
+}
+
+
+.Menu-container{
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+
+justify-content: center;
+}
+.menu-list-item{
+    margin: 40px;
+
+}
+.menu-list-item active{
+    font-weight: bold;
+    
+}
+
+
+.Profile-container{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.profile-text-container{
+    /* 
+     */
+     /* padding: 50px; */
+     
+     display: flex;
+      margin: 0px;
+     align-items: center;
+}
+.profile-picture{
+   width: 32px;
+   height: 32px;
+   border-radius: 100%;
+   object-fit: cover;
+}
+.profile-text{
+  padding-right: 10px;
+}
+
+.container {
+    /* Basic dimensions and centering */
+    width: 100%;
+    height: 100%;
+    display: flex  ;
+    flex-direction: row;
+    /* justify-content: center;
+    
+    align-items: center; */
+  
+    /* Dark mode colors and gradient */
+    
+  }
+
+.toggle {
+    width: 50px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin: 20px 20px;
+  
+  }
+  
+  .toggle-icon {
+    color: rgb(233, 174, 25);
+  }
+  
+  .toggle-icon-moon {
+    color: #0e1b35;
+  }
+  
+  .toggle-ball {
+    width: 20px;
+    height: 18px;
+    background-color: #111;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease all;
+  }
+  
+  .toggle.active{
+    background-color: #000000;
+  }
+  
+  .toggle-ball.active{
+    background-color: white; 
+    transform: translateX(-20px);
+    right: 7px;
+  }
+  
+  .container.active{
+    background-color: white;
+  }
+  .movie-list-title.active{
+    color: #000000;
+  
+  }
+  
+  
+   .navbar-container.active{
+    background-color: white;
+    color: #000000;
+  
+   }
+  
+   .container-header{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    padding-top: 50px;
+    margin-top: 50px;
+    font-size: 15mm;
+
+   }
+  
+ 
+   @media only screen and (max-width: 940px){
+    .Menu-container{
+      display: none;
+    }
+   }
+
+
+   .movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    margin: 90px 10px 100px 25px;    
+    }
+    .movie-list-item{
+      margin-right: 50px;
+      position: relative;
+    margin-bottom: 50px;
+      align-items: center ;
+      display: flex;
+      flex-direction: column;   
+    }
+    .movie-list-item:hover {
+        opacity: 65%;
+        transition-duration: 0.5s  ;
+
+    }
+    .movie-list-item-title{
+        color: white;
+        
+    }
+    .movie-list-item-img{
+        height: 320px;
+        width: 230px;
+
+      /* padding-top: 25px; */
+        border-radius: 20px;
+        
+      }
+      .menu-list-item-ing :hover > .movie-list-item-title{
+        box-shadow: #ffffff;
+
+      }
+      
+      
+         
+    
